@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\TransactionsService",
+    "\\TransactionsService\\AsyncDataServices",
+    "\\TransactionsService\\Controllers"
+  ],
+  "SelectedNode": "\\TransactionsService\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

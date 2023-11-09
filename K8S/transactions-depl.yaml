@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transactions-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: transactionsservice
+  template:
+    metadata:
+      labels:
+        app: transactionsservice
+    spec:
+      containers:
+        - name: transactionsservice
+          image: alinayavetska/transactionsservice:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: transactions-clusterip-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: transactionsservice
+  ports:
+  - name: transactionsservice
+    protocol: TCP
+    port: 80
+    targetPort: 80 

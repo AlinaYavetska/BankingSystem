@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CustomerService",
+    "\\CustomerService\\Controllers",
+    "\\CustomerService\\Data",
+    "\\CustomerService\\SyncDataServices",
+    "\\CustomerService\\SyncDataServices\\Http"
+  ],
+  "SelectedNode": "\\CustomerService\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}
